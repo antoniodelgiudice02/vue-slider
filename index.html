@@ -21,7 +21,7 @@
     
                 <div id="slide-container">
     
-                    <div id="image"> <img :src="images[0]" alt=""></div>
+                    <div id="image"> <img :src="images[imageIndex]" alt=""></div>
     
                     <!--div id="scroll">
                         <div class="selection thumb"><img src="./img/05.webp" alt=""></div>
@@ -35,8 +35,8 @@
     
                 <div id="controller-container">
     
-                    <div id="up-arrow" class="arrow"><i class="fa-solid fa-arrow-up"></i></div>
-                    <div id="down-arrow" class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div id="up-arrow" class="arrow" @click="increase()"><i class="fa-solid fa-arrow-up"></i></div>
+                    <div id="down-arrow" class="arrow" @click="decrease()"><i class="fa-solid fa-arrow-down"></i></div>
     
                 </div>
     
